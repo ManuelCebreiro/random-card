@@ -1,7 +1,7 @@
 window.onload = function (){
     cartas();
 }
-
+let llamada = cartas ();
 function cartas(){
     let simbols = ["♦", "♥", "♠", "♣"];
     let values = ["A", "2","3","4","5","6","7","8","9","10","J","Q","K"];
@@ -41,20 +41,29 @@ let btn = document.getElementById("clickme")
     cartas()
 })
 
-var segundos = 6;
-document.getElementById("temporizador").innerHTML= "En " + segundos + " segundos se reiniciará la carta aleatoria, cuando presiones el boton de Iniciar temporizador.";
+//var segundos = 6;
+//document.getElementById("temporizador").innerHTML= "En " + segundos + " segundos se reiniciará la carta aleatoria, cuando presiones el boton de Iniciar temporizador.";
 
-function actualizartempo(){
-document.getElementById("temporizador").innerHTML= "En " + segundos + " segundos se reiniciará la carta aleatoria, cuando presiones el boton de Iniciar temporizador.";
-if(segundos == 0){
-    cartas();}
-    else{segundos--;
-    setTimeout("actualizartempo()",1000);
-}
-}
+//function actualizartempo(){
+//document.getElementById("temporizador").innerHTML= "En " + segundos + " segundos se reiniciará la carta aleatoria, cuando presiones el boton de Iniciar temporizador.";
+//if(segundos == 0){
+  //  cartas();
+    //segundos === 6}
+    //else{segundos--;
+    //setTimeout("actualizartempo()",1000);}}
 
 
-  
 
- //document.getElementById("temporizador").innerHTML
-//let tempo = setInterval(function(){cartas()},1000);
+    //function actualizartempo(){
+    //var segundos = 3;
+   
+    //document.getElementById("temporizador").innerHTML ="En " + segundos + " segundos se reiniciará la carta aleatoria, cuando presiones el boton de Iniciar temporizador.";
+
+    //let tempo = setInterval(function(){cartas()},3000);
+
+
+
+
+//var parate = document.getElementById("parar");
+//parate.addEventListener("click", function(){
+    //clearInterval(tempo);})
