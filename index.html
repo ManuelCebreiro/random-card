@@ -14,7 +14,9 @@
     <div class="row">
         <div class="col-4">
           <div class="text-center btn-group-vertical"">
-            <button id="clickme" type="button" class="btn btn-warning text mt-5">Refresh</button>
+            <button id="clickme" type="button" class="shadow btn btn-warning text mt-5">Refresh</button>
+            <button onclick="actualizartempo()" type="button" class="shadow btn btn-warning text mt-5">Iniciar temporizador</button>
+
             </div>
         </div>
         <div class="col-4">
@@ -24,7 +26,9 @@
                 <div id="number"></div>
                 <div id="simbol1"></div>
             </div>
-            
+            <div >
+                <p id="temporizador"></p>
+            </div>
         </div>
 
         <div class="col-4"></div>
@@ -32,7 +36,7 @@
 
     </div>
     </div>
-
+       
     <script src="app.js"></script>
   </body>
 </html>

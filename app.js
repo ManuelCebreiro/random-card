@@ -17,7 +17,12 @@ function cartas(){
     let b = document.querySelector("#simbolo").innerHTML= simbolsaleatorio; // simbolos de arriba
     let c = document.querySelector("#simbol1").innerHTML= simbolsaleatorio; // simbolos de abajo
 
-    //document.getElementById("#simbol").style.color = "red";
+//document.getElementById("#simbol").style.color = "red";
+
+//if(b == "♥" || c == "♥"){
+    //x.style.color = "red"
+    //y.style.color = "red"}
+
 
     let x= document.getElementById("simbolo")
     let y= document.getElementById("simbol1")
@@ -36,10 +41,20 @@ let btn = document.getElementById("clickme")
     cartas()
 })
 
+var segundos = 6;
+document.getElementById("temporizador").innerHTML= "En " + segundos + " segundos se reiniciará la carta aleatoria, cuando presiones el boton de Iniciar temporizador.";
 
-//if(b == "♥" || c == "♥"){
-    //x.style.color = "red"
-    //y.style.color = "red"}
+function actualizartempo(){
+document.getElementById("temporizador").innerHTML= "En " + segundos + " segundos se reiniciará la carta aleatoria, cuando presiones el boton de Iniciar temporizador.";
+if(segundos == 0){
+    cartas();}
+    else{segundos--;
+    setTimeout("actualizartempo()",1000);
+}
+}
 
 
- 
+  
+
+ //document.getElementById("temporizador").innerHTML
+//let tempo = setInterval(function(){cartas()},1000);
